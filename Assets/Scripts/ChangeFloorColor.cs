@@ -29,6 +29,7 @@ public class ChangeFloorColor : MonoBehaviour
 			rend.material.color = new Color(0.9716f,0.9384f,0.5637f,1f);
 		}
 		if (gameObject.layer == LayerMask.NameToLayer ("Verde")) {
+			
 			rend.material.color = new Color(0.6962f,1f,06367f,1f);
 		}
 	}

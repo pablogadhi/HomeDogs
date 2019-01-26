@@ -27,7 +27,7 @@ public class AttackTorreta : MonoBehaviour
 		else
 		{
 			currentReload = 0f;
-			Instantiate(bala,new Vector3(0,0,0),new Quaternion(0,0,0,0),transform);
+			Instantiate(bala,new Vector3(transform.position.x,1,transform.position.z),new Quaternion(0,0,0,0),transform);
 		}
 		}  
 	}

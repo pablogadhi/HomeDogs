@@ -15,24 +15,20 @@ public class ChangeFloorColor : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-
+		rend = GetComponent<Renderer> ();
 		t = timer;
 
 		//Chequear el layer del suelo y setear el color conrespecto del layer
-		if (gameObject.layer == LayerMask.NameToLayer ("Rojo")) {
-			rend = GetComponent<Renderer> ();
+		if (gameObject.layer == LayerMask.NameToLayer ("Rojo")) {			
 			rend.material.color = new Color (0.9339f, 0.5154f, 0.5154f, 1f);
 		}
 		if (gameObject.layer == LayerMask.NameToLayer ("Azul")) {
-			rend = GetComponent<Renderer> ();
 			rend.material.color = new Color(0.5279f,0.5279f,0.9905f,1f);
 		}
 		if (gameObject.layer == LayerMask.NameToLayer ("Amarillo")) {
-			rend = GetComponent<Renderer> ();
 			rend.material.color = new Color(0.9716f,0.9384f,0.5637f,1f);
 		}
 		if (gameObject.layer == LayerMask.NameToLayer ("Verde")) {
-			rend = GetComponent<Renderer> ();
 			rend.material.color = new Color(0.6962f,1f,06367f,1f);
 		}
 	}

@@ -5,10 +5,10 @@ using UnityEngine;
 public class ChangeFloorColor : MonoBehaviour
 {
 	public float timer;
-	public Color colR = Color.red;
-	public Color colG = Color.blue;
-	public Color colB = Color.green;
-	public Color colY = Color.yellow;
+	public Color colR = new Color(0.9339f,0.5154f,0.5154f,1f);
+	public Color colG = new Color(0.6962f,1f,06367f,1f);
+	public Color colB = new Color(0.5279f,0.5279f,0.9905f,1f);
+	public Color colY = new Color(0.9716f,0.9384f,0.5637f,1f);
 	public Renderer rend;
 	private float t = 0;
 
@@ -16,49 +16,25 @@ public class ChangeFloorColor : MonoBehaviour
 	void Start()
 	{
 
-		bool rojo = false;
-		bool azul = false;
-		bool amarillo = false;
-		bool verde = false;
 		t = timer;
 
-		//Chequear el layer del suelo
+		//Chequear el layer del suelo y setear el color conrespecto del layer
 		if (gameObject.layer == LayerMask.NameToLayer ("Rojo")) {
-			rojo = true;
+			rend = GetComponent<Renderer> ();
+			rend.material.color = new Color (0.9339f, 0.5154f, 0.5154f, 1f);
 		}
 		if (gameObject.layer == LayerMask.NameToLayer ("Azul")) {
-			azul = true;
+			rend = GetComponent<Renderer> ();
+			rend.material.color = new Color(0.5279f,0.5279f,0.9905f,1f);
 		}
 		if (gameObject.layer == LayerMask.NameToLayer ("Amarillo")) {
-			amarillo = true;
+			rend = GetComponent<Renderer> ();
+			rend.material.color = new Color(0.9716f,0.9384f,0.5637f,1f);
 		}
 		if (gameObject.layer == LayerMask.NameToLayer ("Verde")) {
-			verde = true;
-		}
-
-		//Cambiar el color del suelo con respecto a su layer
-
-		if (rojo == true) {
 			rend = GetComponent<Renderer> ();
-			rend.material.color = colR;
+			rend.material.color = new Color(0.6962f,1f,06367f,1f);
 		}
-
-		if (verde == true) {
-			rend = GetComponent<Renderer> ();
-			rend.material.color = colG;
-		}
-
-		if (azul == true) {
-			rend = GetComponent<Renderer> ();
-			rend.material.color = colB;
-		}
-
-		if (amarillo == true) {
-			rend = GetComponent<Renderer> ();
-			rend.material.color = colY;
-		}
-
-		Debug.Log (gameObject.layer);
 	}
 
 	// Update is called once per frame
@@ -87,19 +63,19 @@ public class ChangeFloorColor : MonoBehaviour
 		//verde = 3
 		if (num == 0) {
 			gameObject.layer = LayerMask.NameToLayer ("Rojo");
-			rend.material.color = colR;
+			rend.material.color = new Color(0.9339f,0.5154f,0.5154f,1f);
 		}
 		if (num == 1) {
 			gameObject.layer = LayerMask.NameToLayer ("Azul");
-			rend.material.color = colB;
+			rend.material.color = new Color(0.5279f,0.5279f,0.9905f,1f);
 		}
 		if (num == 2) {
 			gameObject.layer = LayerMask.NameToLayer ("Amarillo");
-			rend.material.color = colY;
+			rend.material.color = new Color(0.9716f,0.9384f,0.5637f,1f);
 		}
 		if (num == 3) {
 			gameObject.layer = LayerMask.NameToLayer ("Verde");
-			rend.material.color = colG;
+			rend.material.color = new Color(0.6962f,1f,06367f,1f);
 		}
 
 

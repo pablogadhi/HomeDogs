@@ -1,2 +1,2 @@
 # HomeDogs
-GGJ ProjectNew Unity Project
+GGJ Unity Project

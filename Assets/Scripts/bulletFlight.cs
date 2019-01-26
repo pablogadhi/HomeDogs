@@ -18,9 +18,9 @@ public class bulletFlight : MonoBehaviour
 		transform.Translate(Vector3.forward*velocidad*Time.deltaTime);
     }
 
-	private void OnTriggerEnter(Collider other)
-	{
-		if (other.gameObject.tag == "Enemigo" || other.gameObject.tag=="Pared")
+	void OnCollisionEnter (Collision col)
+    {
+		if (col.gameObject.tag == "Enemigo" || col.gameObject.tag=="Pared")
 		{
 			Destroy(gameObject);
 		}

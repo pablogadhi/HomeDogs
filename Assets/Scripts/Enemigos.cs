@@ -20,20 +20,27 @@ public class Enemigos : MonoBehaviour
     
     void OnCollisionEnter (Collision col)
     {
+        Debug.Log(col.gameObject.tag);
+
         if(col.gameObject.tag == "Bala")
         {
             health--;
+            Debug.Log("IN");
         }
         
         else if(col.gameObject.tag == "Ataque")
         {
-            health -= 3;
+            health -= 2;
         }
         
         else if(col.gameObject.tag == "Piso")
         {
-            health--;
             myNavMeshAgent.speed = 0.5f;
+        }
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
         
     }

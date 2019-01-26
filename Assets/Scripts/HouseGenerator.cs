@@ -31,16 +31,25 @@ public class HouseGenerator : MonoBehaviour
             }
         }
 
+        houseGrid[5, 5] = true;
+
         GenerateLevel();
     }
 
     private void GenerateLevel()
     {
+        //LargeRooms
         for (var i = 0; i < LargeAmount; i++)
         {
             TryToCreateRooms(Size.Large);
         }
 
+        for (int i = 0; i < MediumAmount; i++)
+        {
+            TryToCreateRooms(Size.Medium);
+        }
+
+        //Fill the rest with small rooms
         for (var i = 0; i <= GridSize; i++)
         {
             for (int j = 0; j <= GridSize; j++)
@@ -59,15 +68,21 @@ public class HouseGenerator : MonoBehaviour
         {
             var posX = Random.Range(0, GridSize);
             var posZ = Random.Range(0, GridSize);
+            var rotate = false;
 
-            if (PositionsAreFree(posX, posZ, size))
+            if (size == Size.Medium)
             {
-                InstantiateRoom(posX, posZ, size);
+                rotate = Random.Range(0, 2) == 0;
+            }
+
+            if (PositionsAreFree(posX, posZ, size, rotate))
+            {
+                InstantiateRoom(posX, posZ, size, rotate);
             }
             else
             {
                 if (!HasSpace()) return;
-                Debug.Log("Putting");
+                Debug.Log("Trying Again");
                 continue;
             }
 
@@ -75,11 +90,12 @@ public class HouseGenerator : MonoBehaviour
         }
     }
 
-    private void InstantiateRoom(int posX, int posZ, Size size)
+    private void InstantiateRoom(int posX, int posZ, Size size, bool rotate = false)
     {
         var offsetX = 0;
         var offsetZ = 0;
         var objectToInstantiate = SmallRoom;
+        var rotation = Quaternion.identity;
 
         switch (size)
         {
@@ -88,12 +104,25 @@ public class HouseGenerator : MonoBehaviour
                 offsetZ = 5;
                 objectToInstantiate = LargeRoom;
                 break;
+            case Size.Medium:
+                if (rotate)
+                {
+                    offsetZ = 5;
+                    rotation = Quaternion.Euler(0f, 90f, 0f);
+                }
+                else
+                {
+                    offsetX = 5;
+                }
+
+                objectToInstantiate = MediumRoom;
+                break;
         }
 
         Instantiate(objectToInstantiate,
             new Vector3(realPositions[posX, posZ]["x"] + offsetX, 0f,
-                realPositions[posX, posZ]["z"] + offsetZ), Quaternion.identity, transform);
-        OcuppyGridPositions(posX, posZ, size);
+                realPositions[posX, posZ]["z"] + offsetZ), rotation, transform);
+        OcuppyGridPositions(posX, posZ, size, rotate);
     }
 
     private bool HasSpace()
@@ -109,7 +138,7 @@ public class HouseGenerator : MonoBehaviour
         return false;
     }
 
-    private void OcuppyGridPositions(int posX, int posZ, Size size)
+    private void OcuppyGridPositions(int posX, int posZ, Size size, bool rotate = false)
     {
         switch (size)
         {
@@ -122,10 +151,22 @@ public class HouseGenerator : MonoBehaviour
             case Size.Small:
                 houseGrid[posX, posZ] = true;
                 break;
+            case Size.Medium:
+                houseGrid[posX, posZ] = true;
+                if (rotate)
+                {
+                    houseGrid[posX, posZ + 1] = true;
+                }
+                else
+                {
+                    houseGrid[posX + 1, posZ] = true;
+                }
+
+                break;
         }
     }
 
-    private bool PositionsAreFree(int posX, int posZ, Size roomSize)
+    private bool PositionsAreFree(int posX, int posZ, Size roomSize, bool rotated = false)
     {
         switch (roomSize)
         {
@@ -136,6 +177,9 @@ public class HouseGenerator : MonoBehaviour
                        !houseGrid[posX + 1, posZ + 1];
             case Size.Small:
                 return !houseGrid[posX, posZ];
+            case Size.Medium:
+                if (rotated) return !houseGrid[posX, posZ] && !houseGrid[posX, posZ + 1];
+                return !houseGrid[posX, posZ] && !houseGrid[posX + 1, posZ];
         }
 
         return false;

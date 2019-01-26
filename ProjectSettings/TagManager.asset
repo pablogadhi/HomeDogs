@@ -3,15 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags:
   - Bala
-  - Enemigo
-  - Defensa
-  - Pared
-=======
-  tags: []
->>>>>>> Jorge
   layers:
   - Default
   - TransparentFX
@@ -21,18 +14,11 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
-<<<<<<< HEAD
   - 
   - 
   - 
   - 
-=======
-  - Rojo
-  - Azul
-  - Verde
-  - Amarillo
->>>>>>> Jorge
+  - 
   - 
   - 
   - 

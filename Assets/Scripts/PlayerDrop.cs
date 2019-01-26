@@ -23,6 +23,9 @@ public class PlayerDrop : MonoBehaviour
 		}
 	}
 
+
+	//esto solo es de prueba, se puede quitar no hay clavo
+
 	void Movimiento(){
 		if (Input.GetKey(KeyCode.W)) {
 			transform.Translate (Vector3.forward * deltaMovement * Time.deltaTime);

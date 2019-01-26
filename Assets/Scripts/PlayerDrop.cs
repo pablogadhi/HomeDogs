@@ -23,9 +23,12 @@ public class PlayerDrop : MonoBehaviour
 		}
 	}
 
+<<<<<<< HEAD
 
 	//esto solo es de prueba, se puede quitar no hay clavo
 
+=======
+>>>>>>> Jorge
 	void Movimiento(){
 		if (Input.GetKey(KeyCode.W)) {
 			transform.Translate (Vector3.forward * deltaMovement * Time.deltaTime);

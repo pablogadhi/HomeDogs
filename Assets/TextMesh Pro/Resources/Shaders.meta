@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/TextMesh Pro/Resources/Shaders.meta
 guid: 99f836c9cb9345dba2e72c4a1f2d0695
+=======
+guid: f83e11e5613ca7441a6bedce49f883bb
+>>>>>>> Jorge:Assets/Materials.meta
 folderAsset: yes
 timeCreated: 1436068007
 licenseType: Pro

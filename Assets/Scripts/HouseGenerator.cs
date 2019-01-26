@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class HouseGenerator : MonoBehaviour
 {
+<<<<<<< HEAD
     public int GridSize;
     public int LargeAmount;
     public int MediumAmount;
@@ -185,3 +186,14 @@ public class HouseGenerator : MonoBehaviour
         return false;
     }
 }
+=======
+
+	void Start(){
+		
+	}
+
+	void Update(){
+
+	}
+}
+>>>>>>> Jorge

@@ -707,7 +707,10 @@ GameObject:
   - component: {fileID: 1140322090}
   - component: {fileID: 1140322089}
   - component: {fileID: 1140322088}
+<<<<<<< HEAD
   - component: {fileID: 1140322093}
+=======
+>>>>>>> Jorge
   m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
@@ -803,6 +806,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1140322093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,6 +819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94cc53d6d0506264fac5f6c0c5cd0c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> Jorge
 --- !u!1 &1570402432
 GameObject:
   m_ObjectHideFlags: 0

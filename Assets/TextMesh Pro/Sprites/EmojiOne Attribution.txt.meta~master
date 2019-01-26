@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD:Assets/Prefabs/Bullet.prefab.meta
+<<<<<<< HEAD:Assets/Prefabs/Bullet.prefab.meta
 guid: 8611fe9dcb0a5c745b31f0213642aa4c
 PrefabImporter:
 =======
@@ -7,6 +8,10 @@ guid: 7451339792e151e6f9b3e0dd626b23d5
 folderAsset: yes
 DefaultImporter:
 >>>>>>> enemigos:Assets/Materials.meta
+=======
+guid: 381dcb09d5029d14897e55f98031fca5
+TextScriptImporter:
+>>>>>>> master:Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

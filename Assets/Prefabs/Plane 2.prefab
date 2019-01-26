@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6559599201685316968}
   - component: {fileID: 3367711862470609111}
   - component: {fileID: 935542842453072720}
+  - component: {fileID: 601297214734985689}
   m_Layer: 0
   m_Name: Plane 2
   m_TagString: Untagged
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1cb0f846ed9bd84808d4e36000538b8a, type: 2}
+  - {fileID: 2100000, guid: 79cade20fd117624d8c2280c699add5e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,3 +93,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &601297214734985689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189845121692746722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdfc411d09a51bb42ba1d19d3b612939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 10
+  colR: {r: 0.9339, g: 0.5154, b: 0.5154, a: 1}
+  colG: {r: 0.6962, g: 1, b: 6367, a: 1}
+  colB: {r: 0.5279, g: 0.5279, b: 0.9905, a: 1}
+  colY: {r: 0.9716, g: 0.9384, b: 0.5637, a: 1}
+  rend: {fileID: 0}

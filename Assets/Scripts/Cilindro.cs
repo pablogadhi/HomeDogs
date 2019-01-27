@@ -22,6 +22,7 @@ public class Cilindro : MonoBehaviour
     {
 		if (isbiting)
 		{
+			perro.SendMessage("EstaParado");
 			currentbitime += Time.deltaTime;
 			if (currentbitime > 0.5)
 				mordida.SendMessage("stopIt");
@@ -33,12 +34,16 @@ public class Cilindro : MonoBehaviour
 		{
 			if (objetivo != null)
 			{
-
+				perro.SendMessage("EstaAtacando");
 				perro.transform.LookAt(objetivo.transform);
+				perro.transform.eulerAngles = new Vector3(90, perro.transform.eulerAngles.y, perro.transform.eulerAngles.z);
 				perro.transform.position = Vector3.MoveTowards(perro.transform.position, objetivo.transform.position, velocidad);
 			}
 			else
 			{
+				perro.SendMessage("EstaParado");
+				perro.transform.LookAt(transform.position);
+				perro.transform.eulerAngles = new Vector3(90, perro.transform.eulerAngles.y, perro.transform.eulerAngles.z);
 				perro.transform.position = Vector3.MoveTowards(perro.transform.position, gameObject.transform.position, velocidad);
 			}
 		}

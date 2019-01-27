@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class bite : MonoBehaviour
 {
+	AudioSource audio;
 	Collider mordida;
     // Start is called before the first frame update
     void Start()
     {
+		audio = GetComponent<AudioSource>();
 		mordida = GetComponent<BoxCollider>();
 		mordida.enabled = false;
     }
@@ -20,6 +22,7 @@ public class bite : MonoBehaviour
 
 	public void doBite()
 	{
+		audio.Play();
 		mordida.enabled = true;
 	}
 	public void stopIt()

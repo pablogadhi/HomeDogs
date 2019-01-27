@@ -16,6 +16,7 @@ public class Enemigos : MonoBehaviour
         goalPosition = new Vector3(0f, 0f, 0f);
         myNavMeshAgent.SetDestination(goalPosition);
         health = 5;
+
     }
     
     void OnCollisionEnter (Collision col)
@@ -45,7 +46,8 @@ public class Enemigos : MonoBehaviour
 
     void Update()
     {
-    
+        transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
+        myNavMeshAgent.SetDestination(goalPosition);
     }
 
 }

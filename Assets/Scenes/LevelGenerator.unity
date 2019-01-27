@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc04012a06b0481097579f70b483212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerToHit: 9
+  layerToHit: 10
   velocity: 100
   VerticalAxis: Vertical1
   HorizontalAxis: Horizontal1
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc04012a06b0481097579f70b483212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerToHit: 9
+  layerToHit: 12
   velocity: 100
   VerticalAxis: Vertical1
   HorizontalAxis: Horizontal1
@@ -846,7 +846,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &786792530
 MonoBehaviour:
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc04012a06b0481097579f70b483212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerToHit: 9
+  layerToHit: 11
   velocity: 100
   VerticalAxis: Vertical1
   HorizontalAxis: Horizontal1
@@ -1474,7 +1474,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2105142148
 GameObject:
@@ -1581,7 +1581,7 @@ Transform:
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2122506594
 PrefabInstance:

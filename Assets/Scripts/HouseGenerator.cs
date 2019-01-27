@@ -31,7 +31,7 @@ public class HouseGenerator : MonoBehaviour
             }
         }
 
-        houseGrid[5, 5] = true;
+        houseGrid[GridSize / 2, GridSize / 2] = true;
 
         GenerateLevel();
     }
@@ -52,7 +52,7 @@ public class HouseGenerator : MonoBehaviour
         //Fill the rest with small rooms
         for (var i = 0; i <= GridSize; i++)
         {
-            for (int j = 0; j <= GridSize; j++)
+            for (var j = 0; j <= GridSize; j++)
             {
                 if (PositionsAreFree(i, j, Size.Small))
                 {

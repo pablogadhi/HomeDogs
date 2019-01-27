@@ -457,13 +457,19 @@ PrefabInstance:
     - target: {fileID: 8201439938765500578, guid: a87d315eb7580e41fb5d634e79021079,
         type: 3}
       propertyPath: MediumAmount
-      value: 0
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8201439938765500578, guid: a87d315eb7580e41fb5d634e79021079,
         type: 3}
       propertyPath: LargeRoom
       value: 
       objectReference: {fileID: 1522438577293338208, guid: 9418bf6c3258b5f14aed68f7a6ebb1e7,
+        type: 3}
+    - target: {fileID: 8201439938765500578, guid: a87d315eb7580e41fb5d634e79021079,
+        type: 3}
+      propertyPath: MediumRoom
+      value: 
+      objectReference: {fileID: 2036601482495372086, guid: b2791e8d7522580cf85394a4d8dbbd84,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a87d315eb7580e41fb5d634e79021079, type: 3}

@@ -296,9 +296,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerToHit: 9
   velocity: 100
-  VerticalAxis: Vertical
-  HorizontalAxis: Horizontal
-  LeftTrap: 
+  VerticalAxis: Vertical1
+  HorizontalAxis: Horizontal1
+  LeftTrap: Torreta1
   BottomTrap: 
   RightTrap: 
   torreta: {fileID: 1448671267106182120, guid: 6082e753baa1eed4493e6a3c6031380b, type: 3}

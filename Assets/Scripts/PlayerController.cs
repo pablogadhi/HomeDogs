@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     {
     }
 
-    // Update is called once per frame
+    // Update is called once per frame-1.575
     void Update()
     {
         transform.position +=
@@ -45,8 +45,6 @@ public class PlayerController : MonoBehaviour
 
                 Instantiate(torreta, new Vector3(transform.position.x, 0, transform.position.z),  Quaternion.identity);
             }
-
-            Debug.Log("Hit");
 
         }
     }

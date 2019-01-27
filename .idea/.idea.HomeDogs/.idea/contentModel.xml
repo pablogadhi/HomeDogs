@@ -8,13 +8,16 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AttackTorreta.cs" t="Include" />
+          <e p="BlackHand.cs" t="Include" />
           <e p="ChangeFloorColor.cs" t="Include" />
           <e p="Cilindro.cs" t="Include" />
+          <e p="Enemigos.cs" t="Include" />
           <e p="HouseGenerator.cs" t="Include" />
           <e p="Perro.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerDrop.cs" t="Include" />
           <e p="Room.cs" t="Include" />
+          <e p="Spawn.cs" t="Include" />
           <e p="Sripts Menus" t="Include">
             <e p="Exit.cs" t="Include" />
             <e p="LoadScene.cs" t="Include" />

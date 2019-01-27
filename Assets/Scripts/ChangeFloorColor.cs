@@ -26,26 +26,6 @@ public class ChangeFloorColor : MonoBehaviour
         }
 
         ChangeFloor();
-        //Chequear el layer del suelo y setear el color conrespecto del layer
-//        if (gameObject.layer == LayerMask.NameToLayer("Rojo")
-//        {
-//            ChangeChildrenColors(new Color(0.9339f, 0.5154f, 0.5154f, 1f));
-//        }
-//
-//        if (gameObject.layer == LayerMask.NameToLayer("Azul"))
-//        {
-//            ChangeChildrenColors(new Color(0.5279f, 0.5279f, 0.9905f, 1f));
-//        }
-//
-//        if (gameObject.layer == LayerMask.NameToLayer("Amarillo"))
-//        {
-//            ChangeChildrenColors(new Color(0.9716f, 0.9384f, 0.5637f, 1f));
-//        }
-//
-//        if (gameObject.layer == LayerMask.NameToLayer("Verde"))
-//        {
-//            ChangeChildrenColors(new Color(0.6962f, 1f, 06367f, 1f));
-//        }
     }
 
     // Update is called once per frame
@@ -61,11 +41,12 @@ public class ChangeFloorColor : MonoBehaviour
         }
     }
 
-    private void ChangeChildrenColors(Color color)
+    private void ChangeChildrenColors(Color color, LayerMask layer)
     {
         foreach (var child in childrenRender)
         {
             child.material.color = color;
+            child.gameObject.layer = layer;
         }
     }
 
@@ -74,33 +55,28 @@ public class ChangeFloorColor : MonoBehaviour
     {
         var num = Random.Range(0, 4);
 
-        //cambiar el color
-        //rojo = 0
-        //azul = 1
-        //amarillo = 2
-        //verde = 3
         if (num == 0)
         {
-            gameObject.layer = LayerMask.NameToLayer("Rojo");
-            ChangeChildrenColors(new Color(0.9339f, 0.5154f, 0.5154f, 1f));
+            var layer = LayerMask.NameToLayer("Rojo");
+            ChangeChildrenColors(new Color(0.9339f, 0.5154f, 0.5154f, 1f), layer);
         }
 
         if (num == 1)
         {
-            gameObject.layer = LayerMask.NameToLayer("Azul");
-            ChangeChildrenColors(new Color(0.5279f, 0.5279f, 0.9905f, 1f));
+            var layer = LayerMask.NameToLayer("Azul");
+            ChangeChildrenColors(new Color(0.5279f, 0.5279f, 0.9905f, 1f), layer);
         }
 
         if (num == 2)
         {
-            gameObject.layer = LayerMask.NameToLayer("Amarillo");
-            ChangeChildrenColors(new Color(0.9716f, 0.9384f, 0.5637f, 1f));
+            var layer = LayerMask.NameToLayer("Amarillo");
+            ChangeChildrenColors(new Color(0.9716f, 0.9384f, 0.5637f, 1f), layer);
         }
 
         if (num == 3)
         {
-            gameObject.layer = LayerMask.NameToLayer("Verde");
-            ChangeChildrenColors(new Color(0.6962f, 1f, 06367f, 1f));
+            var layer = LayerMask.NameToLayer("Verde");
+            ChangeChildrenColors(new Color(0.6962f, 1f, 06367f, 1f), layer);
         }
     }
 }

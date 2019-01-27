@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
     public string BottomTrap;
     public string RightTrap;
     public GameObject torreta;
-    //public GameObject pato;
-    //public GameObject trampa;
+    public GameObject pato;
+    public GameObject trampa;
 
     Vector3 direction = new Vector3(0,-1f,0);
 

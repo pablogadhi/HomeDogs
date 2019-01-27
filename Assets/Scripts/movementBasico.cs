@@ -15,7 +15,9 @@ public class movementBasico : MonoBehaviour
     void Update()
 	{
 		transform.Translate(new Vector3(Input.GetAxis("Horizontal"),0,Input.GetAxis("Vertical"))*velocidad*Time.deltaTime);
+	}
 
-
+	private void OnTriggerEnter(Collider other)
+	{
 	}
 }

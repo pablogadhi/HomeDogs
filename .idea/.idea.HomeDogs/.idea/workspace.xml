@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6feeac1e-9717-48f0-bef9-8e8c11165e0d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HouseGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HouseGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HomeDogs/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HomeDogs/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HomeDogs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HomeDogs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Plane 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Plane 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelGenerator.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelGenerator.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ChangeFloorColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ChangeFloorColor.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/HouseGenerator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
+            <state relative-caret-position="340">
               <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
               <folding>
                 <marker date="1548547620233" expanded="false" signature="6:127" ph="..." />
@@ -52,27 +57,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ChangeFloorColor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="300">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
               <folding>
-                <marker date="1548542765360" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548542765360" expanded="true" signature="125:2052" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="492:1142" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="676:752" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="811:880" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="943:1012" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="1072:1139" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="1194:1350" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="1275:1346" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="1373:2050" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="1411:1486" ph="/* cambiar el color ... */" />
-                <marker date="1548542765360" expanded="true" signature="1503:1626" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="1643:1766" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="1783:1910" ph="{...}" />
-                <marker date="1548542765360" expanded="true" signature="1927:2045" ph="{...}" />
+                <marker date="1548553841830" expanded="false" signature="6:78" ph="..." />
+                <marker date="1548553841830" expanded="true" signature="125:2988" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="597:1633" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="719:850" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="883:1627" ph="/* Chequear el layer del suelo y setear el color conrespecto del layer ... */" />
+                <marker date="1548553841830" expanded="true" signature="1691:1908" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="1791:1902" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="1960:2080" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="2012:2074" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="2105:2986" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="2159:2258" ph="/* cambiar el color ... */" />
+                <marker date="1548553841830" expanded="true" signature="2280:2438" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="2461:2619" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="2642:2804" ph="{...}" />
+                <marker date="1548553841830" expanded="true" signature="2827:2980" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -144,11 +149,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Room.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ChangeFloorColor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayersController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HouseGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ChangeFloorColor.cs" />
       </list>
     </option>
   </component>
@@ -246,12 +251,12 @@
       <updated>1548514373496</updated>
       <workItem from="1548514375182" duration="1201000" />
       <workItem from="1548519380474" duration="19931000" />
-      <workItem from="1548542877879" duration="3789000" />
+      <workItem from="1548542877879" duration="7969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24921000" />
+    <option name="totallyTimeSpent" value="29101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,30 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ChangeFloorColor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <marker date="1548542765360" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548542765360" expanded="true" signature="125:2052" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="492:1142" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="676:752" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="811:880" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="943:1012" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="1072:1139" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="1194:1350" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="1275:1346" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="1373:2050" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="1411:1486" ph="/* cambiar el color ... */" />
-            <marker date="1548542765360" expanded="true" signature="1503:1626" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="1643:1766" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="1783:1910" ph="{...}" />
-            <marker date="1548542765360" expanded="true" signature="1927:2045" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayersController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -391,7 +372,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HouseGenerator.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
+        <state relative-caret-position="340">
           <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding>
             <marker date="1548547620233" expanded="false" signature="6:127" ph="..." />
@@ -423,6 +404,30 @@
             <marker date="1548547620233" expanded="true" signature="4367:4457" ph="{...}" />
             <marker date="1548547620233" expanded="true" signature="4589:5182" ph="{...}" />
             <marker date="1548547620233" expanded="true" signature="4621:5153" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ChangeFloorColor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <marker date="1548553841830" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548553841830" expanded="true" signature="125:2988" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="597:1633" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="719:850" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="883:1627" ph="/* Chequear el layer del suelo y setear el color conrespecto del layer ... */" />
+            <marker date="1548553841830" expanded="true" signature="1691:1908" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="1791:1902" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="1960:2080" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="2012:2074" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="2105:2986" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="2159:2258" ph="/* cambiar el color ... */" />
+            <marker date="1548553841830" expanded="true" signature="2280:2438" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="2461:2619" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="2642:2804" ph="{...}" />
+            <marker date="1548553841830" expanded="true" signature="2827:2980" ph="{...}" />
           </folding>
         </state>
       </provider>

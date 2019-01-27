@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
             new Vector3(Input.GetAxis(HorizontalAxis), 0f, Input.GetAxis(VerticalAxis)) * velocity *
             Time.deltaTime;
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetAxis(LeftTrap) != 0)
 
         {
             int layerMask = 1 << layerToHit;

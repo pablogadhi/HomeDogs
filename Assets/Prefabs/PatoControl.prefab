@@ -363,8 +363,8 @@ MonoBehaviour:
   perro: {fileID: 5068450157829059618}
   mordida: {fileID: 5068450158745207706}
   objetivo: {fileID: 0}
-  velocidad: 0.02
-  bitime: 5
+  velocidad: 0.05
+  bitime: 2
   currentbitime: 0
   isbiting: 0
 --- !u!135 &5068450159409130161

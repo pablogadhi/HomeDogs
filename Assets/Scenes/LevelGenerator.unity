@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -298,7 +298,7 @@ MonoBehaviour:
   velocity: 100
   VerticalAxis: Vertical1
   HorizontalAxis: Horizontal1
-  LeftTrap: Torreta1
+  LeftTrap: 
   BottomTrap: 
   RightTrap: 
   torreta: {fileID: 1448671267106182120, guid: 6082e753baa1eed4493e6a3c6031380b, type: 3}
@@ -457,13 +457,19 @@ PrefabInstance:
     - target: {fileID: 8201439938765500578, guid: a87d315eb7580e41fb5d634e79021079,
         type: 3}
       propertyPath: MediumAmount
-      value: 0
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8201439938765500578, guid: a87d315eb7580e41fb5d634e79021079,
         type: 3}
       propertyPath: LargeRoom
       value: 
       objectReference: {fileID: 1522438577293338208, guid: 9418bf6c3258b5f14aed68f7a6ebb1e7,
+        type: 3}
+    - target: {fileID: 8201439938765500578, guid: a87d315eb7580e41fb5d634e79021079,
+        type: 3}
+      propertyPath: MediumRoom
+      value: 
+      objectReference: {fileID: 2036601482495372086, guid: b2791e8d7522580cf85394a4d8dbbd84,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a87d315eb7580e41fb5d634e79021079, type: 3}

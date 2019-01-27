@@ -87,6 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6226850373499516223}
   - component: {fileID: 7063032508969028552}
+  - component: {fileID: 6086394815200507510}
   m_Layer: 0
   m_Name: MediumRoom
   m_TagString: Untagged
@@ -131,6 +132,20 @@ MonoBehaviour:
   colB: {r: 0.5279, g: 0.5279, b: 0.9905, a: 1}
   colY: {r: 0.9716, g: 0.9384, b: 0.5637, a: 1}
   rend: {fileID: 0}
+--- !u!64 &6086394815200507510
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036601482495372086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1 &2646439153747964922
 GameObject:
   m_ObjectHideFlags: 0

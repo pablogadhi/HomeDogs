@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour
                 Instantiate(torreta, new Vector3(transform.position.x, 0, transform.position.z),  Quaternion.identity);
             }
 
+            Debug.Log("Hit");
+
         }
     }
 }

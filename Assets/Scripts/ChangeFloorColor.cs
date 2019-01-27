@@ -37,7 +37,6 @@ public class ChangeFloorColor : MonoBehaviour
         {
             ChangeFloor();
             timer = t;
-            Debug.Log(gameObject.layer);
         }
     }
 

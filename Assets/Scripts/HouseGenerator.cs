@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 public class HouseGenerator : MonoBehaviour
@@ -12,9 +13,11 @@ public class HouseGenerator : MonoBehaviour
     public GameObject LargeRoom;
     public GameObject MediumRoom;
     public GameObject SmallRoom;
+    public NavMeshSurface Navigator;
 
     private bool[,] houseGrid;
     private Dictionary<String, int>[,] realPositions;
+    private List<Room> instantiatedRooms = new List<Room>();
 
     // Start is called before the first frame update
     void Start()
@@ -60,6 +63,9 @@ public class HouseGenerator : MonoBehaviour
                 }
             }
         }
+
+        Navigator.BuildNavMesh();
+
     }
 
     private void TryToCreateRooms(Size size)
@@ -82,7 +88,6 @@ public class HouseGenerator : MonoBehaviour
             else
             {
                 if (!HasSpace()) return;
-                Debug.Log("Trying Again");
                 continue;
             }
 
@@ -119,9 +124,10 @@ public class HouseGenerator : MonoBehaviour
                 break;
         }
 
-        Instantiate(objectToInstantiate,
-            new Vector3(realPositions[posX, posZ]["x"] + offsetX, 0f,
-                realPositions[posX, posZ]["z"] + offsetZ), rotation, transform);
+        instantiatedRooms.Add(Instantiate(objectToInstantiate,
+                new Vector3(realPositions[posX, posZ]["x"] + offsetX, 0f,
+                    realPositions[posX, posZ]["z"] + offsetZ), rotation, transform)
+            .GetComponent<Room>());
         OcuppyGridPositions(posX, posZ, size, rotate);
     }
 

@@ -884,7 +884,6 @@ GameObject:
   - component: {fileID: 6238524223253243568}
   - component: {fileID: 6238524223254209648}
   - component: {fileID: 1216127019967408647}
-  - component: {fileID: 7857083441403567559}
   m_Layer: 0
   m_Name: Cube.002
   m_TagString: Untagged
@@ -965,22 +964,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300002, guid: 2314e69bf492f8b0d9f26e9c1090bf7d, type: 3}
---- !u!208 &7857083441403567559
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6238524223252216496}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 1.575, y: 0.5, z: 0.25}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 3.5000002, z: 4.75}
-  m_TimeToStationary: 0.5
 --- !u!1 &6238524223252216498
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,7 +976,6 @@ GameObject:
   - component: {fileID: 6238524223253243570}
   - component: {fileID: 6238524223254209650}
   - component: {fileID: 1216127019967408645}
-  - component: {fileID: 6936442547394326100}
   m_Layer: 0
   m_Name: Cube.003
   m_TagString: Untagged
@@ -1074,22 +1056,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 2314e69bf492f8b0d9f26e9c1090bf7d, type: 3}
---- !u!208 &6936442547394326100
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6238524223252216498}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 1.575, y: 0.5, z: 0.25}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 3.5000002, z: -4.75}
-  m_TimeToStationary: 0.5
 --- !u!1 &6238524223252216500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1068,6 @@ GameObject:
   - component: {fileID: 6238524223253243572}
   - component: {fileID: 6238524223254209652}
   - component: {fileID: 1216127019967408643}
-  - component: {fileID: 1311244740941241446}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1183,22 +1148,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300006, guid: 2314e69bf492f8b0d9f26e9c1090bf7d, type: 3}
---- !u!208 &1311244740941241446
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6238524223252216500}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.25, y: 0.5, z: 1.575}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: 4.75, y: 3.5000002, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &6238524223252216502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,7 +1160,6 @@ GameObject:
   - component: {fileID: 6238524223253243574}
   - component: {fileID: 6238524223254209654}
   - component: {fileID: 1216127019967408641}
-  - component: {fileID: 1067134541942769597}
   m_Layer: 0
   m_Name: Cube.001
   m_TagString: Untagged
@@ -1292,22 +1240,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300004, guid: 2314e69bf492f8b0d9f26e9c1090bf7d, type: 3}
---- !u!208 &1067134541942769597
-NavMeshObstacle:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6238524223252216502}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Shape: 1
-  m_Extents: {x: 0.25, y: 0.5, z: 1.575}
-  m_MoveThreshold: 0.1
-  m_Carve: 0
-  m_CarveOnlyStationary: 1
-  m_Center: {x: -4.75, y: 3.5000002, z: 0}
-  m_TimeToStationary: 0.5
 --- !u!1 &6238524223252216508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,6 +1342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8896464436921822188}
   - component: {fileID: 8411080603960738879}
+  - component: {fileID: 5422130608097656642}
   m_Layer: 0
   m_Name: SmallRoom
   m_TagString: Untagged
@@ -1462,3 +1395,16 @@ MonoBehaviour:
   colB: {r: 0.5279, g: 0.5279, b: 0.9905, a: 1}
   colY: {r: 0.9716, g: 0.9384, b: 0.5637, a: 1}
   rend: {fileID: 0}
+--- !u!114 &5422130608097656642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8896464436921822189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b31a8313a6994c5a815fccedd4243b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 0

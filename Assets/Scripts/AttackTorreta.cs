@@ -14,6 +14,7 @@ public class AttackTorreta : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
+			transform.eulerAngles = new Vector3(90, transform.eulerAngles.y, transform.eulerAngles.z);
 
     }
 

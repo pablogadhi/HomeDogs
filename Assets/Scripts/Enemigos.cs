@@ -20,12 +20,10 @@ public class Enemigos : MonoBehaviour
     
     void OnCollisionEnter (Collision col)
     {
-        Debug.Log(col.gameObject.tag);
 
         if(col.gameObject.tag == "Bala")
         {
             health--;
-            Debug.Log("IN");
         }
         
         else if(col.gameObject.tag == "Ataque")

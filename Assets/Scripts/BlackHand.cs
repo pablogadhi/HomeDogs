@@ -30,7 +30,6 @@ public class BlackHand : MonoBehaviour
 	        if (Physics.Raycast(transform.position, direction, out hit, 50, layerMask))
 	        {
 	            //Debug.DrawRay(transform.position, transform.TransformDirection(direction) * hit.distance, Color.yellow);
-	            Debug.Log("Hit");
 
 	            Instantiate(torreta, new Vector3(transform.position.x, 0, transform.position.z),  Quaternion.identity);
 	        }
